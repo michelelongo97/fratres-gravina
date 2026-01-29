@@ -52,11 +52,15 @@ export default function DonazionePage() {
               <li>Donne: ogni 180 giorni</li>
             </ul>
           </section>
-          <div className="alert alert-danger mt-4">
-            <strong>
-              Per informazioni dettagliate e prenotazioni contattaci tramite la
-              pagina Contatti.
-            </strong>
+          <div className="mt-4 text-center pt-4">
+            <a
+              className="btn btn-danger"
+              href="https://portale-donatori.sanita.regione.puglia.it/home"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Prenota una donazione
+            </a>
           </div>
         </div>
       </div>
