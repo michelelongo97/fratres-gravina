@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
+import { events } from "../data/events";
 
 export default function HomePage() {
+  const nextEvents = events.slice(0, 1);
+
   return (
     <>
       {/* HERO */}
@@ -60,24 +63,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* EVENTI */}
+      {/* PROSSIME DONAZIONI */}
       <section className="py-5">
         <div className="container text-center">
-          <h2 className="fw-bold mb-4">Prossime donazioni</h2>
+          <h2 className="fw-bold mb-4">Prossimo evento o donazione</h2>
 
           <div className="row justify-content-center">
-            <div className="col-md-4 mb-3">
-              <div className="card shadow-sm">
-                <div className="card-body">
-                  <h5 className="card-title">Domenica 20 Ottobre</h5>
-                  <p className="card-text">
-                    Centro Trasfusionale – Ospedale di Gravina
-                  </p>
-                  <p className="text-muted mb-0">08:00 – 12:00</p>
+            {nextEvents.map((event) => (
+              <div key={event.id} className="col-md-4 mb-3">
+                <div className="card shadow-sm h-100">
+                  <div className="card-body">
+                    <h5 className="card-title fw-bold">{event.date}</h5>
+                    <p className="card-text">{event.location}</p>
+                    <p className="text-muted mb-0">{event.time}</p>
+                    <h6 className="card-title fw-bold py-3 text-danger">
+                      {event.type.toUpperCase()}
+                    </h6>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
+
+          <Link to="/eventi" className="btn btn-outline-danger mt-3">
+            Vedi tutti gli eventi
+          </Link>
         </div>
       </section>
 

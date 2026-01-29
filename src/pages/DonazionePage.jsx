@@ -11,29 +11,47 @@ export default function DonazionePage() {
             Donare il sangue è un gesto volontario, gratuito e sicuro.
           </p>
 
-          <h5 className="fw-bold text-danger mt-4">Chi può donare</h5>
+          <p>
+            Donando sangue non solo aiuti chi ne ha bisogno, ma controlli anche
+            la tua salute. Un doppio atto d’amore ❤️ <br />
+            N.B. Ricordati di portare con te Documento di riconoscimento e
+            tesserino sanitario.{" "}
+          </p>
+          <h5 className="fw-bold text-danger"> 👉 Prima della donazione</h5>
           <ul>
-            <li>Età compresa tra 18 e 65 anni</li>
-            <li>Peso minimo 50 kg</li>
-            <li>Buono stato di salute</li>
-            <li>Stile di vita sano</li>
-          </ul>
+            <li>
+              Fai una colazione leggera (tè, caffè, fette biscottate, succo)
+            </li>
+            <li>Bevi acqua</li>
 
-          <h5 className="fw-bold text-danger mt-4">
-            Ogni quanto si può donare
-          </h5>
+            <li> NO latte, yogurt e derivati.</li>
+          </ul>
+          <h5 className="fw-bold text-danger">👉 Dopo la donazione </h5>
           <ul>
-            <li>Uomini: ogni 90 giorni</li>
-            <li>Donne: ogni 180 giorni</li>
+            {" "}
+            <li>Bevi di più durante la giornata</li>{" "}
+            <li>Evita sforzi intensi per qualche ora</li>{" "}
+            <li>Concediti uno spuntino 🍎</li>
           </ul>
+          <p>💖 Ti aspettiamo! Donare è semplice, sicuro e fa bene al cuore.</p>
 
-          <h5 className="fw-bold text-danger mt-4">Prima della donazione</h5>
-          <ul>
-            <li>Fare una colazione leggera</li>
-            <li>Evitare cibi grassi</li>
-            <li>Portare un documento di identità</li>
-          </ul>
+          <section className="bg-light">
+            <h5 className="fw-bold text-danger mt-4">Chi può donare</h5>
+            <ul>
+              <li>Età compresa tra 18 e 65 anni</li>
+              <li>Peso minimo 50 kg</li>
+              <li>Buono stato di salute</li>
+              <li>Stile di vita sano</li>
+            </ul>
 
+            <h5 className="fw-bold text-danger mt-4">
+              Ogni quanto si può donare
+            </h5>
+            <ul>
+              <li>Uomini: ogni 90 giorni</li>
+              <li>Donne: ogni 180 giorni</li>
+            </ul>
+          </section>
           <div className="alert alert-danger mt-4">
             <strong>
               Per informazioni dettagliate e prenotazioni contattaci tramite la
