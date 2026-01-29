@@ -6,7 +6,7 @@ export default function Header() {
       <div className="container">
         {/* LOGO / NOME */}
         <NavLink className="navbar-brand fw-bold" to="/">
-          Fratres Gravina
+          Fratres Gravina | Donatori di sangue
         </NavLink>
 
         {/* HAMBURGER */}
