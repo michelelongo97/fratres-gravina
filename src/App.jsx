@@ -5,10 +5,12 @@ import ChiSiamoPage from "./pages/ChiSiamoPage";
 import DonazionePage from "./pages/DonazionePage";
 import EventiPage from "./pages/EventiPage";
 import ContattiPage from "./pages/ContattiPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<HomePage />} />
