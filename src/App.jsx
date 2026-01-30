@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ChiSiamoPage from "./pages/ChiSiamoPage";
 import DonazionePage from "./pages/DonazionePage";
 import EventiPage from "./pages/EventiPage";
+import EventDetailPage from "./pages/EventDetailPage";
 import ContattiPage from "./pages/ContattiPage";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="chi-siamo" element={<ChiSiamoPage />} />
           <Route path="donazione" element={<DonazionePage />} />
           <Route path="eventi" element={<EventiPage />} />
+          <Route path="eventi/:id" element={<EventDetailPage />} />
           <Route path="contatti" element={<ContattiPage />} />
         </Route>
       </Routes>

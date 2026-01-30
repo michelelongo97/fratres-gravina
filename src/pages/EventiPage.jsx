@@ -1,4 +1,5 @@
 import { events } from "../data/events";
+import { Link } from "react-router-dom";
 
 export default function Eventi() {
   return (
@@ -14,6 +15,12 @@ export default function Eventi() {
             <p className="mb-1">📅 {event.date}</p>
             <p className="mb-1">📍 {event.location}</p>
             <p className="text-muted mb-0">⏰ {event.time}</p>
+            <Link
+              to={`/eventi/${event.id}`}
+              className="btn btn-danger btn-sm mt-2"
+            >
+              Dettagli
+            </Link>
           </div>
         </div>
       ))}

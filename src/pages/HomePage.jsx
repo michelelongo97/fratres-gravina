@@ -79,6 +79,12 @@ export default function HomePage() {
                     <h6 className="card-title fw-bold py-3 text-danger">
                       {event.type.toUpperCase()}
                     </h6>
+                    <Link
+                      to={`/eventi/${event.id}`}
+                      className="btn btn-danger btn-sm mt-2"
+                    >
+                      Dettagli
+                    </Link>
                   </div>
                 </div>
               </div>
