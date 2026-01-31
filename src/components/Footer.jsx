@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-danger text-white">
@@ -51,6 +53,25 @@ export default function Footer() {
               <i className="fa-brands fa-whatsapp"></i>
             </a>
           </div>
+        </div>
+
+        {/* POLICY */}
+        <div className="text-center pt-4">
+          <small>
+            <Link
+              to="/privacy-policy"
+              className="text-white text-decoration-none link-hover"
+            >
+              Privacy Policy
+            </Link>
+            {" | "}
+            <Link
+              to="/cookie-policy"
+              className="text-white text-decoration-none link-hover"
+            >
+              Cookie Policy
+            </Link>
+          </small>
         </div>
 
         <hr className="border-light" />

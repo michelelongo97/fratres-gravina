@@ -6,6 +6,9 @@ import DonazionePage from "./pages/DonazionePage";
 import EventiPage from "./pages/EventiPage";
 import EventDetailPage from "./pages/EventDetailPage";
 import ContattiPage from "./pages/ContattiPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import PageNotFound from "./pages/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
           <Route path="eventi" element={<EventiPage />} />
           <Route path="eventi/:id" element={<EventDetailPage />} />
           <Route path="contatti" element={<ContattiPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
+          <Route path="*" element={<PageNotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
