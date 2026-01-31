@@ -33,9 +33,8 @@ export default function DonazionePage() {
             <li>Evita sforzi intensi per qualche ora</li>{" "}
             <li>Concediti uno spuntino 🍎</li>
           </ul>
-          <p>💖 Ti aspettiamo! Donare è semplice, sicuro e fa bene al cuore.</p>
 
-          <section className="bg-light">
+          <section>
             <h5 className="fw-bold text-danger mt-4">Chi può donare</h5>
             <ul>
               <li>Età compresa tra 18 e 65 anni</li>
@@ -52,6 +51,8 @@ export default function DonazionePage() {
               <li>Donne: ogni 180 giorni</li>
             </ul>
           </section>
+          <p>💖 Ti aspettiamo! Donare è semplice, sicuro e fa bene al cuore.</p>
+
           <div className="mt-4 text-center pt-4">
             <a
               className="btn btn-danger"
