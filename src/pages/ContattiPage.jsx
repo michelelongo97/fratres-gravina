@@ -118,25 +118,24 @@ export default function ContattiPage() {
             <hr />
 
             <p className="fw-bold mb-2">Seguici sui social</p>
-
-            <a
-              href={import.meta.env.VITE_SOCIAL_FACEBOOK}
-              target="_blank"
-              rel="noreferrer"
-              className="text-danger fs-4 me-3"
-            >
-              <i className="fa-brands fa-facebook"></i>
-            </a>
-
-            <a
-              href={import.meta.env.VITE_SOCIAL_INSTAGRAM}
-              target="_blank"
-              rel="noreferrer"
-              className="text-danger fs-4"
-            >
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-
+            <div className="flex">
+              <a
+                href={import.meta.env.VITE_SOCIAL_FACEBOOK}
+                target="_blank"
+                rel="noreferrer"
+                className="text-danger fs-4 me-3"
+              >
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+              <a
+                href={import.meta.env.VITE_SOCIAL_INSTAGRAM}
+                target="_blank"
+                rel="noreferrer"
+                className="text-danger fs-4"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+            </div>
             <hr />
 
             <p className="text-muted mb-0">
