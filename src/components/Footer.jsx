@@ -1,10 +1,10 @@
 export default function Footer() {
   return (
-    <footer className="bg-danger text-white mt-5">
+    <footer className="bg-danger text-white">
       <div className="container py-4">
         <div className="row">
           {/* DATI ASSOCIAZIONE */}
-          <div className="col-md-6 mb-3">
+          <div className="col-md-6 mb-3 text-center text-md-start pt-3">
             <h5 className="fw-bold">Fratres Gravina in Puglia</h5>
             <p className="mb-1">Associazione Donatori di Sangue</p>
             <p className="mb-1">CF: 91051860723</p>
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           {/* SOCIAL */}
-          <div className="col-md-6 text-md-end">
+          <div className="col-md-6 text-center text-md-end pt-3">
             <h5 className="fw-bold">Seguici sui social</h5>
 
             <a
