@@ -6,7 +6,12 @@ export default function Header() {
       <div className="container">
         {/* LOGO / NOME */}
         <NavLink className="navbar-brand fw-bold" to="/">
-          Fratres Gravina
+          <img
+            src="/images/logos/logo-transp.png"
+            alt="Fratres Gravina in Puglia"
+            height="40"
+            className="header-logo"
+          />
         </NavLink>
 
         {/* HAMBURGER */}
