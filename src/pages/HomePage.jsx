@@ -102,7 +102,7 @@ export default function HomePage() {
         <div className="container">
           <h2 className="fw-bold mb-3">Vuoi diventare donatore?</h2>
           <p className="mb-4">Contattaci per ricevere tutte le informazioni.</p>
-          <Link to="/contatti" className="btn btn-light btn-lg">
+          <Link to="/chi-siamo" className="btn btn-light btn-lg">
             Contattaci
           </Link>
         </div>
