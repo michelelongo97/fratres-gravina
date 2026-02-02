@@ -51,12 +51,13 @@ export default function Header() {
               </NavLink>
             </li>
 
+            {/*
             <li className="nav-item">
               <NavLink className="nav-link" to="/contatti">
                 Contatti
               </NavLink>
             </li>
-
+*/}
             <li className="nav-item">
               <a
                 className="nav-link"
