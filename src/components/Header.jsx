@@ -9,7 +9,7 @@ export default function Header() {
           <img
             src="/images/logos/logo-transp.png"
             alt="Fratres Gravina in Puglia"
-            height="40"
+            height="50"
             className="header-logo"
           />
         </NavLink>
