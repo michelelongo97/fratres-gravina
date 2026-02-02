@@ -24,7 +24,10 @@ export default function DonazionePage() {
             </li>
             <li>Bevi acqua</li>
 
-            <li> NO latte, yogurt e derivati.</li>
+            <li>
+              {" "}
+              <strong>NO latte e derivati, yogurt, uova.</strong>
+            </li>
           </ul>
           <h5 className="fw-bold text-danger">👉 Dopo la donazione </h5>
           <ul>
@@ -48,7 +51,7 @@ export default function DonazionePage() {
             </h5>
             <ul>
               <li>Uomini: ogni 90 giorni</li>
-              <li>Donne: ogni 180 giorn</li>
+              <li>Donne: ogni 180 giorni</li>
             </ul>
           </section>
           <p>

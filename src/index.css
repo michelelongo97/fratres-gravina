@@ -16,3 +16,11 @@
 .footer-contact a:hover {
   text-decoration: underline !important;
 }
+
+.bigfont {
+  font-size: 30px;
+}
+
+.imgs-height {
+  height: 500px;
+}

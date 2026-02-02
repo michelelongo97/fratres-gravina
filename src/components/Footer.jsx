@@ -11,7 +11,7 @@ export default function Footer() {
             <p className="mb-1">Associazione Donatori di Sangue</p>
             <p className="mb-1">CF: 91051860723</p>
             <p className="mb-1">
-              📍 Via Aspromonte, S.C. (ex mattatoio comunale),
+              📍 Via Aspromonte, S.N.C. (EX MATTATOIO COMUNALE),
               <br /> Gravina in Puglia (BA), 70024
             </p>
             <p className="mb-1">
@@ -78,9 +78,12 @@ export default function Footer() {
             >
               <i className="fa-brands fa-whatsapp social-icon"></i>
             </a>
-
-            <h5 className="fw-bold pt-4">DONA IL 5X1000</h5>
-            <p>Codice Fiscale: 91051860723</p>
+            <div>
+              <h5 className="fw-bold pt-4 bigfont">DONA IL TUO 5XMILLE</h5>
+              <p>
+                Codice Fiscale: <span className="bigfont">91051860723</span>
+              </p>
+            </div>
           </div>
         </div>
 

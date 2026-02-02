@@ -27,6 +27,8 @@ export default function EventDetailPage() {
         <div className="card-body p-4">
           <h2 className="fw-bold text-danger mb-3">{event.title}</h2>
 
+          <img src={event.image} alt="event" className="imgs-height" />
+
           <p className="mb-2">
             <i className="fa-solid fa-calendar-days me-2 text-danger"></i>
             <strong>Data:</strong> {event.date}

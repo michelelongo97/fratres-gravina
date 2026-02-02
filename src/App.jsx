@@ -5,9 +5,7 @@ import ChiSiamoPage from "./pages/ChiSiamoPage";
 import DonazionePage from "./pages/DonazionePage";
 import EventiPage from "./pages/EventiPage";
 import EventDetailPage from "./pages/EventDetailPage";
-{
-  /* import ContattiPage from "./pages/ContattiPage"; */
-}
+import ModulisticaPage from "./pages/ModulisticaPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import PageNotFound from "./pages/PageNotFound";
@@ -24,7 +22,7 @@ function App() {
           <Route path="donazione" element={<DonazionePage />} />
           <Route path="eventi" element={<EventiPage />} />
           <Route path="eventi/:id" element={<EventDetailPage />} />
-          {/* <Route path="contatti" element={<ContattiPage />} /> */}
+          <Route path="modulistica" element={<ModulisticaPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="*" element={<PageNotFound />} />
