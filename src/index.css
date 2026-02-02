@@ -1,3 +1,18 @@
 .header-logo {
   filter: brightness(0) invert(1);
 }
+
+.social-icon {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #931824; /* rosso bootstrap scuro */
+  transform: scale(1.15);
+}
+
+.footer-contact a:hover {
+  text-decoration: underline !important;
+}

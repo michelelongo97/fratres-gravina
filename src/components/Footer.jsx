@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container py-4">
         <div className="row">
           {/* DATI ASSOCIAZIONE */}
-          <div className="col-md-6 mb-3 text-center text-md-start pt-3">
+          <div className="col-md-6 mb-3 text-center text-md-start pt-3 footer-contact">
             <h5 className="fw-bold">Fratres Gravina in Puglia</h5>
             <p className="mb-1">Associazione Donatori di Sangue</p>
             <p className="mb-1">CF: 91051860723</p>
@@ -14,9 +14,35 @@ export default function Footer() {
               📍 Via Aspromonte, S.C. (ex mattatoio comunale),
               <br /> Gravina in Puglia (BA), 70024
             </p>
-            <p className="mb-1">📧 {import.meta.env.VITE_EMAIL}</p>
-            <p className="mb-1">📧 {import.meta.env.VITE_EMAIL_PEC}</p>
-            <p className="mb-0">📞 {import.meta.env.VITE_PHONE_NUMBER}</p>
+            <p className="mb-1">
+              📧{" "}
+              <a
+                href={`mailto:${import.meta.env.VITE_EMAIL}`}
+                className="text-white text-decoration-none"
+              >
+                {import.meta.env.VITE_EMAIL}
+              </a>
+            </p>
+
+            <p className="mb-1">
+              📧{" "}
+              <a
+                href={`mailto:${import.meta.env.VITE_EMAIL_PEC}`}
+                className="text-white text-decoration-none"
+              >
+                {import.meta.env.VITE_EMAIL_PEC}
+              </a>
+            </p>
+
+            <p className="mb-0">
+              📞{" "}
+              <a
+                href={`tel:${import.meta.env.VITE_PHONE_NUMBER}`}
+                className="text-white text-decoration-none"
+              >
+                {import.meta.env.VITE_PHONE_NUMBER}
+              </a>
+            </p>
           </div>
 
           {/* SOCIAL */}
@@ -30,7 +56,7 @@ export default function Footer() {
               className="text-white fs-4 me-3"
               aria-label="Facebook"
             >
-              <i className="fa-brands fa-facebook"></i>
+              <i className="fa-brands fa-facebook social-icon"></i>
             </a>
 
             <a
@@ -40,7 +66,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-instagram"></i>
+              <i className="fa-brands fa-instagram social-icon"></i>
             </a>
 
             <a
@@ -50,13 +76,13 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="fa-brands fa-whatsapp"></i>
+              <i className="fa-brands fa-whatsapp social-icon"></i>
             </a>
           </div>
         </div>
 
         {/* POLICY */}
-        <div className="text-center pt-4">
+        <div className="text-center pt-4 footer-contact">
           <small>
             <Link
               to="/privacy-policy"

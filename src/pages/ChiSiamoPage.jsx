@@ -162,7 +162,7 @@ export default function ChiSiamoPage() {
                 rel="noreferrer"
                 className="text-danger fs-4 me-3"
               >
-                <i className="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook social-icon"></i>
               </a>
               <a
                 href={import.meta.env.VITE_SOCIAL_INSTAGRAM}
@@ -170,7 +170,7 @@ export default function ChiSiamoPage() {
                 rel="noreferrer"
                 className="text-danger fs-4"
               >
-                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram social-icon"></i>
               </a>
             </div>
             <hr />
@@ -179,6 +179,22 @@ export default function ChiSiamoPage() {
               Per informazioni su donazione, requisiti o giornate di raccolta
               sangue, contattaci liberamente.
             </p>
+          </div>
+        </div>
+        <div className="mt-4 text-center ">
+          <p className="pt-2">
+            Oppure puoi prenotare direttamente la donzione sul portale donatori
+            regione Puglia:
+          </p>
+          <div className="pt-1">
+            <a
+              className="btn btn-danger"
+              href="https://portale-donatori.sanita.regione.puglia.it/home"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Portale Regione Puglia
+            </a>
           </div>
         </div>
       </div>
