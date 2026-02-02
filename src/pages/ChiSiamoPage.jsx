@@ -61,22 +61,26 @@ export default function ChiSiamoPage() {
       <div className="row justify-content-center">
         <div className="col-md-10">
           <p className="lead text-center mb-4">
-            La Fratres Gravina in Puglia è un’associazione di volontari
-            impegnata nella promozione della donazione di sangue come gesto
-            gratuito, anonimo e responsabile.
+            La Fratres Gravina in Puglia è un’associazione di ispirazione
+            cristiana, i volontari sono impegnati nella promozione della
+            donazione di sangue, emoderivati, cellule staminali ed organi come
+            gesto gratuito, anonimo e responsabile attivandosi nella cultura del
+            dono.
           </p>
 
           <p>
             L’associazione opera sul territorio con l’obiettivo di
             sensibilizzare i cittadini sull’importanza della donazione,
-            collaborando con le strutture sanitarie locali per garantire la
+            collaborando con le strutture sanitarie locali, aziende, scuole,
+            collettività ed in qualsiasi luogo di aggregazione per garantire la
             disponibilità di sangue ed emocomponenti.
           </p>
 
           <p>
-            La nostra attività si basa esclusivamente sul volontariato e sulla
-            solidarietà. Ogni giorno promuoviamo valori fondamentali come
-            altruismo, responsabilità civile e attenzione verso il prossimo.
+            La nostra attività si basa esclusivamente sul volontariato, sulla
+            solidarietà e sulla gioia della condivisione. Ogni giorno
+            promuoviamo valori fondamentali come altruismo, responsabilità
+            civile e attenzione verso il prossimo.
           </p>
 
           <p>
@@ -86,7 +90,7 @@ export default function ChiSiamoPage() {
 
           <div className="alert alert-danger mt-4 text-center">
             <strong>
-              Donare il sangue è un atto d’amore verso chi ne ha bisogno.
+              Donare è un atto concreto d’amore verso chi ne ha bisogno.
             </strong>
           </div>
         </div>
@@ -140,8 +144,8 @@ export default function ChiSiamoPage() {
             <h4 className="mb-3">Contatti associazione</h4>
 
             <p>
-              📍 <strong>Sede:</strong> Via Aspromonte, S.C. (ex mattatoio
-              comunale), Gravina in Puglia (BA), 70024
+              📍 <strong>Sede:</strong> Via Aspromonte, S.N.C. (EX MATTATOIO
+              COMUNALE), Gravina in Puglia (BA), 70024
             </p>
 
             <p>
@@ -168,9 +172,18 @@ export default function ChiSiamoPage() {
                 href={import.meta.env.VITE_SOCIAL_INSTAGRAM}
                 target="_blank"
                 rel="noreferrer"
-                className="text-danger fs-4"
+                className="text-danger fs-4 me-3"
               >
                 <i className="fa-brands fa-instagram social-icon"></i>
+              </a>
+              <a
+                className="text-danger fs-4 me-3"
+                aria-label="WhatsApp"
+                href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fa-brands fa-whatsapp social-icon"></i>
               </a>
             </div>
             <hr />
