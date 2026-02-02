@@ -153,7 +153,13 @@ export default function ChiSiamoPage() {
             </p>
 
             <p>
-              📞 <strong>Telefono:</strong> {import.meta.env.VITE_PHONE_NUMBER}
+              📞 <strong>Telefono / WhatsApp:</strong>{" "}
+              <a
+                href={`tel:${import.meta.env.VITE_PHONE_NUMBER}`}
+                className="text-black text-decoration-none"
+              >
+                {import.meta.env.VITE_PHONE_NUMBER}
+              </a>
             </p>
 
             <hr />

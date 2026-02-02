@@ -48,10 +48,13 @@ export default function DonazionePage() {
             </h5>
             <ul>
               <li>Uomini: ogni 90 giorni</li>
-              <li>Donne: ogni 180 giorni</li>
+              <li>Donne: ogni 180 giorn</li>
             </ul>
           </section>
-          <p>💖 Ti aspettiamo! Donare è semplice, sicuro e fa bene al cuore.</p>
+          <p>
+            💖 Ti aspettiamo! Donare è semplice, sicuro e fa bene a te stesso e
+            al cuore.
+          </p>
 
           <div className="mt-4 text-center pt-4">
             <a

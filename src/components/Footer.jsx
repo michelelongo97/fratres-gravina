@@ -78,6 +78,9 @@ export default function Footer() {
             >
               <i className="fa-brands fa-whatsapp social-icon"></i>
             </a>
+
+            <h5 className="fw-bold pt-4">DONA IL 5X1000</h5>
+            <p>Codice Fiscale: 91051860723</p>
           </div>
         </div>
 
