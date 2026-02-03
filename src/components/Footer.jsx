@@ -45,9 +45,15 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* SOCIAL */}
+          {/* SOCIAL & 5xMILLE*/}
           <div className="col-md-6 text-center text-md-end pt-3">
-            <h5 className="fw-bold">Seguici sui social</h5>
+            <div>
+              <h5 className="fw-bold bigfont">DONACI IL TUO 5XMILLE</h5>
+              <p>
+                Codice Fiscale: <span className="bigfont">91051860723</span>
+              </p>
+            </div>
+            <h5 className="fw-bold pt-4">Seguici sui social</h5>
 
             <a
               href={import.meta.env.VITE_SOCIAL_FACEBOOK}
@@ -78,17 +84,11 @@ export default function Footer() {
             >
               <i className="fa-brands fa-whatsapp social-icon"></i>
             </a>
-            <div>
-              <h5 className="fw-bold pt-4 bigfont">DONA IL TUO 5XMILLE</h5>
-              <p>
-                Codice Fiscale: <span className="bigfont">91051860723</span>
-              </p>
-            </div>
           </div>
         </div>
 
         {/* POLICY */}
-        <div className="text-center pt-4 footer-contact">
+        <div className="text-center pt-5 footer-contact">
           <small>
             <Link
               to="/privacy-policy"
