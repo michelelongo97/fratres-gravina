@@ -1,10 +1,21 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Header() {
+  const location = useLocation();
+
+  // Chiusura del menu ad ogni cambio pagina
+  useEffect(() => {
+    const navbar = document.getElementById("fratresNavbar");
+    if (navbar && navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  }, [location]);
+
   return (
     <nav className="navbar navbar-expand-lg bg-danger navbar-dark">
       <div className="container">
-        {/* LOGO / NOME */}
+        {/* LOGO */}
         <NavLink className="navbar-brand fw-bold" to="/">
           <img
             src="/images/logos/logo-transp.png"
@@ -20,13 +31,16 @@ export default function Header() {
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#fratresNavbar"
+          aria-controls="fratresNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* MENU */}
         <div className="collapse navbar-collapse" id="fratresNavbar">
-          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
             <li className="nav-item">
               <NavLink className="nav-link" to="/">
                 Home
