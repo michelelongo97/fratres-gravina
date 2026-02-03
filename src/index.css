@@ -22,5 +22,8 @@
 }
 
 .imgs-height {
-  height: 500px;
+  height: 60vh;
+  min-height: 300px;
+  max-height: 500px;
+  object-fit: cover;
 }
