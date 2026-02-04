@@ -1,16 +1,190 @@
-# React + Vite
+# ❤️ Fratres Gravina in Puglia – Sito Web Ufficiale
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sito web realizzato per l'associazione **Fratres Gravina in Puglia**, dedicata alla promozione della donazione di sangue e alla sensibilizzazione del volontariato sul territorio.
 
-Currently, two official plugins are available:
+👉 Demo online: https://fratresgravina.it  
+👉 Deploy su: Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 Obiettivo del progetto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Realizzare un sito moderno, responsive e facilmente aggiornabile che permetta di:
 
-## Expanding the ESLint configuration
+- Informare sulla donazione del sangue
+- Pubblicare eventi e giornate di raccolta
+- Rendere disponibili moduli scaricabili
+- Fornire contatti e informazioni utili
+- Migliorare la presenza digitale dell'associazione
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Tecnologie utilizzate
+
+### Frontend
+
+- React (Vite)
+- React Router DOM
+- Bootstrap 5
+- FontAwesome Icons
+
+### Backend / Servizi
+
+- API serverless su Vercel
+- Resend (invio email form contatti)
+
+### SEO & Ottimizzazione
+
+- Sitemap XML
+- Meta tag Open Graph
+- Favicon multi formato
+- Ottimizzazione social preview
+
+---
+
+## 📂 Struttura progetto
+
+src/
+├── components/
+│ ├── Header.jsx
+│ ├── Footer.jsx
+│ └── ScrollToTop.jsx
+│
+├── layouts/
+│ └── DefaultLayout.jsx
+│
+├── pages/
+│ ├── HomePage.jsx
+│ ├── ChiSiamoPage.jsx
+│ ├── DonazionePage.jsx
+│ ├── EventiPage.jsx
+│ ├── EventDetailPage.jsx
+│ ├── ModulisticaPage.jsx
+│ ├── PrivacyPolicy.jsx
+│ ├── CookiePolicy.jsx
+│ └── PageNotFound.jsx
+│
+├── data/
+│ └── events.js
+│
+├── api/
+│ └── contact.js
+
+---
+
+## 📅 Gestione eventi
+
+Gli eventi vengono gestiti tramite un file statico:
+src/data/events.js
+
+Questo permette di aggiornare rapidamente:
+
+- Data evento
+- Luogo
+- Orario
+- Immagine
+- Descrizione
+
+---
+
+## 📄 Modulistica
+
+I moduli PDF sono salvati nella cartella:
+public/moduli/
+
+E collegati tramite variabili d’ambiente.
+
+---
+
+## ✉️ Form contatti
+
+Il form utilizza:
+
+- API route serverless
+- Servizio Resend per invio email
+
+Endpoint:
+/api/contact
+
+---
+
+## 🌍 Variabili ambiente
+
+Creare file `.env` nella root:
+VITE_EMAIL=
+VITE_EMAIL_PEC=
+VITE_PHONE_NUMBER=
+VITE_SOCIAL_FACEBOOK=
+VITE_SOCIAL_INSTAGRAM=
+VITE_WHATSAPP_NUMBER=
+
+VITE_MODULO=
+VITE_MODULO_1=
+VITE_MODULO_2=
+
+---
+
+## 🛠️ Installazione locale
+
+Clonare il progetto:
+
+```bash
+git clone https://github.com/USERNAME/fratres-gravina.git
+
+Installare dipendenze:
+npm install
+Avviare server sviluppo:
+npm run dev
+
+📱 Responsive Design
+
+Il sito è ottimizzato per:
+	•	Desktop
+	•	Tablet
+	•	Mobile
+	•	Navigazione accessibile
+
+ 🔎 SEO
+
+Il sito include:
+	•	Meta description
+	•	Open Graph
+	•	Twitter Card
+	•	Sitemap
+
+⸻
+
+⚖️ Privacy e Cookie
+
+Sono presenti pagine dedicate:
+	•	Privacy Policy
+	•	Cookie Policy
+
+⸻
+
+🌐 Dominio
+
+Dominio registrato tramite Aruba:
+fratresgravina.it
+
+🤝 Collaborazione
+
+Progetto sviluppato come iniziativa di supporto digitale per associazione no-profit.
+
+⸻
+
+👨‍💻 Autore
+
+Sviluppato da:
+
+[Michele Longo]
+	•	GitHub: https://github.com/michelelongo97
+	•	LinkedIn: https://www.linkedin.com/in/michelelongo97/
+	•	Portfolio: https://longomichele.it/
+
+⸻
+
+❤️ Ringraziamenti
+
+Un ringraziamento speciale a tutti i volontari Fratres per il loro impegno quotidiano nella salvaguardia della salute pubblica.
+```
