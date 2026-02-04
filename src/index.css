@@ -26,4 +26,5 @@
   min-height: 300px;
   max-height: 500px;
   object-fit: cover;
+  object-position: center 25%;
 }
