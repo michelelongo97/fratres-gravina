@@ -1,13 +1,13 @@
 export const events = [
-  {
-    id: 1,
-    title: "Assemblea dei Soci",
-    date: "Mercoledì 18 Febbraio 2026",
-    time: "16:30 - 18:30",
-    location: "Sede Via Aspromonte S.N.C. (EX MATTATOIO) – Gravina in Puglia",
-    type: "assemblea",
-    image: "../images/events/assemblea.jpeg",
-  },
+  //{
+  // id: 1,
+  //title: "Assemblea dei Soci",
+  //date: "Mercoledì 18 Febbraio 2026",
+  //time: "16:30 - 18:30",
+  //location: "Sede Via Aspromonte S.N.C. (EX MATTATOIO) – Gravina in Puglia",
+  //type: "assemblea",
+  //image: "../images/events/assemblea.jpeg",
+  //},
   {
     id: 2,
     title: "Donazione in autoemoteca",
