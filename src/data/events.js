@@ -44,16 +44,16 @@ export const events = [
   //  image: "/images/events/autoemoteca.jpeg",
   //  type: "donazione",
   // },
-  {
-    id: 6,
-    title: "Donazione in autoemoteca",
-    date: "Domenica 28 Giugno 2026",
-    time: "08:30 - 11:30",
-    location:
-      "Piazzetta antistante sede Fratres - Gravina in Puglia - (contattare ref. Pina 3248693676) ",
-    image: "/images/events/autoemoteca.jpeg",
-    type: "donazione",
-  },
+  //{
+  //  id: 6,
+  //  title: "Donazione in autoemoteca",
+  //  date: "Domenica 28 Giugno 2026",
+  //  time: "08:30 - 11:30",
+  //  location:
+  //    "Piazzetta antistante sede Fratres - Gravina in Puglia - (contattare ref. Pina 3248693676) ",
+  //  image: "/images/events/autoemoteca.jpeg",
+  //  type: "donazione",
+  //},
   {
     id: 7,
     title: "Donazione in autoemoteca",
